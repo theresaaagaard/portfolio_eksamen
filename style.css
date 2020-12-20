@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: #ffe6ad;
+}
+
+/* Nav */
+
+header {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+.menuknap {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    height: 20vw;
+    width: 35vw;
+    margin-left: 2vw;
+}
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    padding: 16px;
+    background: #ffe6ad;
+    left: -90%;
+    transition: all .5s;
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px #1f1f1f;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #64be6a;
+    transition: ease-in .1s;
+}
+
+.menuknap:checked ~ nav ul {
+    left: 0;
+}
+
+.burger {
+    position: absolute;
+    font-size: 35px;
+    color: white;
+    text-shadow: 2px 2px 4px rgb(31, 31, 31);
+    top: 0;
+    right: 0;
+    margin-right: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menuknap:checked ~ nav a {
+    opacity: 1;
+}
+
+section {
+    /*    background-image: url(../images/tech.jpg);*/
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+}
+
+section h1 {
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 3px 3px 4px rgb(31, 31, 31);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+section p {
+    color: white;
+    font-size: 22px;
+    text-shadow: 2px 2px 4px rgb(31, 31, 31);
+    text-align: center;
+    z-index: 1;
+}
+
+hidden {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* Desktop Version */
+
+@media screen and (min-width: 800px) {
+    .burger {
+        display: none;
+    }
+
+    header {
+        display: grid;
+        grid-template-columns: 1fr auto minmax(700px, 3fr);
+    }
+
+    nav {
+
+        display: flex;
+        grid-column: 3/4;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    nav ul {
+        all: unset;
+        list-style: none;
+        display: flex;
+
+    }
+
+    nav li {
+        margin-bottom: 0;
+        margin-right: 16px;
+
+    }
+
+    nav a {
+        opacity: 1;
+    }
+
+}

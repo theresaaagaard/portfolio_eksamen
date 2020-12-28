@@ -1,15 +1,33 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    margin: 0;
+
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background: #ffe6ad;
+    text-shadow: 2px 2px 4px #1f1f1f;
 }
 
-/* Nav */
+img {
+    width: 100%;
+}
+
+#forside {
+    background-image: url('img/forside_mobil.png');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.logo {
+    display: flex;
+    height: 15vw;
+    width: 30vw;
+}
 
 header {
     text-align: center;
@@ -25,20 +43,11 @@ header {
 
 
 
-.logo {
-    display: flex;
-    height: 15vw;
-    width: 30vw;
-
-
-}
-
 nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
     padding: 16px;
-    background: #ffe6ad;
     left: -90%;
     transition: all .5s;
     list-style: none;
@@ -53,7 +62,7 @@ nav a {
     color: #ffe6ad;
     text-decoration: none;
     font-size: 20px;
-    text-shadow: 2px 2px 4px #1f1f1f;
+    text-shadow: 1px 1px 2px rgb(31, 31, 31);
     text-transform: uppercase;
 }
 
@@ -69,7 +78,7 @@ nav a:hover {
 .burger {
     position: absolute;
     font-size: 35px;
-    color: white;
+    color: #ffe6ad;
     text-shadow: 2px 2px 4px rgb(31, 31, 31);
     top: 0;
     right: 0;
@@ -83,87 +92,28 @@ nav a:hover {
     opacity: 1;
 }
 
-section {
-    column-gap: 2vw;
-    grid-row-gap: 2vw;
-    padding: 20px;
-    margin-top: 80px;
-}
-
-section img {
-    width: 100%;
-    grid-gap: 10px;
-
-}
-
-
-
-/*
-section {
-
-    height: 30vw;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    position: relative;
-
-}
-*/
-
-.background {
-    width: 100%;
-    height: 100%;
+#pil {
+    background-image: url('img/pil.svg');
     position: absolute;
-}
-
-h1 {
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    text-shadow: 3px 3px 4px #1f1f1f;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-}
-
-h2 {
-    color: white;
-    text-align: center;
-    font-size: 2rem;
-    text-shadow: 3px 3px 4px #1f1f1f;
-    margin: 0;
-    padding: 0;
-    z-index: 1;
-}
-
-p {
-    color: white;
-    font-size: 22px;
-    text-shadow: 2px 2px 4px #1f1f1f;
-    text-align: center;
-    z-index: 1;
-    padding: 30px;
-}
-
-/*
-.pil {
-    position: absolute;
-    width: 5vw;
     height: 5vw;
-    top: 90%;
-    left: 50%;
-    margin-left: 0vw;
-
+    width: 9vw;
+    top: 149vw;
+    left: 45vw;
+    background-size: cover;
 }
-*/
 
-/* Desktop Version */
+@media only screen and (min-width: 700px) {
 
-@media screen and (min-width: 800px) {
+    #forside {
+        background-image: url('img/Forside.png');
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
     .burger {
         display: none;
     }
@@ -236,5 +186,15 @@ p {
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 2;
+    }
+
+    #pil {
+        background-image: url('img/pil.svg');
+        position: absolute;
+        height: 5vw;
+        width: 9vw;
+        top: 55vw;
+        left: 45vw;
+        background-size: cover;
     }
 }

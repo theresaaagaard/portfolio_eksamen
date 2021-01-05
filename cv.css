@@ -9,6 +9,10 @@ img {
     width: 100%;
 }
 
+#om_mig {
+    padding: 60px;
+    margin-top: 100px;
+}
 
 .logo {
     display: flex;

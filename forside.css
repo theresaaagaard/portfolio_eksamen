@@ -24,10 +24,12 @@ img {
 }
 
 
+
 .logo {
     display: flex;
     height: 15vw;
     width: 30vw;
+
 }
 
 header {
@@ -38,6 +40,8 @@ header {
     top: 0;
 }
 
+
+/* NAV https://www.youtube.com/watch?v=y4N-UeK0cJw brugt */
 .menuknap {
     display: none;
 }
@@ -164,5 +168,17 @@ p {
 
     nav a {
         opacity: 1;
+    }
+
+    #nav_ommig {
+        position: absolute;
+        top: 25vw;
+        left: 2vw;
+    }
+
+    #nav_portfolio {
+        position: absolute;
+        top: 25vw;
+        left: 85vw;
     }
 }

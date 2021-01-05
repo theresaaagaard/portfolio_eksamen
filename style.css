@@ -9,7 +9,9 @@ body {
     background-image: url(img/Baggrund.png);
 }
 
-
+a {
+    text-decoration: none;
+}
 
 /* Nav */
 
@@ -81,19 +83,24 @@ nav a:hover {
     opacity: 1;
 }
 
-section {
-    padding: 20px;
-    margin-top: 80px;
-}
+/* sektioner */
+
 
 section img {
     width: 100%;
 }
 
-.background {
+section {
+    margin: 20px;
+    margin-bottom: 30px;
+}
+
+#background {
     width: 100%;
     height: 100%;
     position: absolute;
+    padding: 60px;
+    margin-top: 140px;
 }
 
 h1 {
@@ -113,7 +120,11 @@ h2 {
     text-shadow: 3px 3px 4px #1f1f1f;
     margin: 0;
     padding: 0;
-    z-index: 1;
+
+}
+
+h3 {
+    color: white;
 }
 
 p {
@@ -123,6 +134,11 @@ p {
     text-align: center;
     z-index: 1;
     padding: 30px;
+}
+
+section figcaption {
+    color: white;
+    padding: 0px;
 }
 
 
@@ -160,6 +176,7 @@ p {
         opacity: 1;
     }
 
+
     section {
         column-gap: 2vw;
         grid-row-gap: 2vw;
@@ -175,31 +192,61 @@ p {
         margin: 5px;
     }
 
-    #portfolio web {
+    #portfolio .web {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 1;
     }
 
-    #portfolio ux {
+    #portfolio .ux {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 1;
     }
 
-    #portfolio animation {
+    #portfolio .animation {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 2;
     }
 
-    #portfolio indhold {
+    #portfolio .indhold {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 2;
     }
+
+    #portfolio_enkeltvis #web {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2px;
+        margin-top: 30px;
+    }
+
+    #portfolio_enkeltvis #ux {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2px;
+        margin-top: 30px;
+    }
+
+    #portfolio_enkeltvis #animation {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2px;
+        margin-top: 30px;
+    }
+
+    #portfolio_enkeltvis #indhold {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 2px;
+        margin-top: 30px;
+    }
+
+
 }

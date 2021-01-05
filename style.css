@@ -6,7 +6,8 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    background-image: url(img/Baggrund.png);
+    /*    background-image: url(img/Baggrund.png);*/
+    background-color: #000000;
 }
 
 a {
@@ -62,8 +63,12 @@ nav a:hover {
     transition: ease-in .1s;
 }
 
-figcaption:hover {
+div h2:hover {
     color: #64be6a;
+}
+
+#portfolio_enkeltvis h2:hover {
+    color: #ffe6ad;
 }
 
 .menuknap:checked ~ nav ul {
@@ -145,6 +150,61 @@ p {
 section figcaption {
     color: white;
     padding: 0px;
+}
+
+.drej {
+    animation-name: drej_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes drej_kf {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.hop {
+    animation-name: hop_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes hop_kf {
+    0% {
+        top: 25vw;
+    }
+
+    100% {
+        top: 10vw;
+    }
+}
+
+#animation_container {
+    position: absolute;
+    top: 72vw;
+    left: 22vw;
+    width: 10vw;
+    height: 12vw;
+}
+
+#animation_sprite {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/animation.png');
+    background-size: 100%;
 }
 
 

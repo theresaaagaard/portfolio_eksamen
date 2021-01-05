@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <a href=""><img class="logo" src="img/Logo_forside.svg" alt=""></a>
+        <a href="forside.html"><img class="logo" src="img/Logo_forside.svg" alt=""></a>
 
         <input id="menuknap" class="menuknap" type="checkbox">
         <label for="menuknap" class="burger">
@@ -34,17 +34,20 @@
 
             <div class="web"><a href="index.html#web">
                     <h2>Grundlæggende web</h2>
-                    <img src="img/random.jpg" alt="">
+                    <img src="img/web_logo.png" alt="">
                 </a>
             </div>
             <div class="ux"><a href="index.html#ux">
                     <h2>Grundlæggende UX</h2>
-                    <img src="img/random.jpg" alt="">
+                    <img src="img/ux_logo.png" alt="">
                 </a>
             </div>
             <div class="animation"><a href="index.html#animation">
                     <h2>Grundlæggende animation</h2>
-                    <img src="img/random.jpg" alt="">
+                    <img src="img/animation_logo.png" alt="">
+                    <div id="animation_container">
+                        <div id="animation_sprite"></div>
+                    </div>
                 </a>
             </div>
             <div class="indhold"><a href="index.html#indhold">
@@ -62,14 +65,13 @@
             <section id="web">
                 <a href="http://t-aagaard.dk/kea/02_web/02_html/website_v1/index.html ">
                     <figure>
-                        <img src="img/Web_v1.png" alt="">
-                        <figcaption>Website version 1</figcaption>
+                        <img src="img/website_v1.png" onmouseover="this.src='img/Web_v1.png'" onmouseout="this.src='img/website_v1.png'">
                     </figure>
                 </a>
                 <a href="http://t-aagaard.dk/kea/02_web/04_responsive/responsive_site_v2/index.html">
                     <figure>
-                        <img src="img/Web_resp_v2.png" alt="">
-                        <figcaption>Responsive website version 2</figcaption>
+                        <img src="img/resp_v2.png" onmouseover="this.src='img/Web_resp_v2.png'" onmouseout="this.src='img/resp_v2.png'">
+
                     </figure>
                 </a>
             </section>
@@ -80,19 +82,16 @@
 
                 <a href="http://t-aagaard.dk/kea/03_ux/03_01_05_ide_Theresa.pdf">
                     <figure>
-                        <img src="img/ide.png" alt="">
-                        <figcaption>Idé</figcaption>
+                        <img src="img/IDE_HOVER.png" onmouseover="this.src='img/ide.png'" onmouseout="this.src='img/IDE_HOVER.png'">
                     </figure>
                 </a>
                 <a href="https://xd.adobe.com/view/503307c4-c1e0-4fed-8594-86ead8a3e4c5-0560/">
                     <figure>
-                        <img src="img/prototype.png" alt="">
-                        <figcaption>Endelig prototype</figcaption>
+                        <img src="img/PROTOTYPE_HOVER.png" onmouseover="this.src='img/prototype.png'" onmouseout="this.src='img/PROTOTYPE_HOVER.png'">
                     </figure>
                 </a>
                 <figure>
-                    <img src="img/pitch.png" alt="">
-                    <figcaption>Pitch</figcaption>
+                    <img src="img/PITCH_HOVER.png" onmouseover="this.src='img/pitch.png'" onmouseout="this.src='img/PITCH_HOVER.png'">
                 </figure>
             </section>
 
@@ -101,14 +100,12 @@
             <section id="animation">
                 <a href="http://t-aagaard.dk/kea/04_animation/produktion/assets/index.html">
                     <figure>
-                        <img src="img/asset.png" alt="">
-                        <figcaption>Assetliste</figcaption>
+                        <img src="img/ASSETLISTE_HOVER.png" onmouseover="this.src='img/asset.png'" onmouseout="this.src='img/assetliste_hover.png'">
                     </figure>
                 </a>
                 <a href="http://t-aagaard.dk/kea/04_animation/spil/index.html">
                     <figure>
-                        <img src="img/spil.png" alt="">
-                        <figcaption>Spil</figcaption>
+                        <img src="img/SPIL_HOVER.png" onmouseover="this.src='img/spil.png'" onmouseout="this.src='img/spil_hover.png'">
                     </figure>
                 </a>
 
@@ -119,14 +116,12 @@
             <section id="indhold">
                 <a href="http://t-aagaard.dk/kea/05_indhold/01_pilot/mini_site/index.html">
                     <figure>
-                        <img src="img/pilot.png" alt="">
-                        <figcaption>Pilotprojekt</figcaption>
+                        <img src="img/PILOT_HOVER.png" onmouseover="this.src='img/pilot.png'" onmouseout="this.src='img/pilot_hover.png'">
                     </figure>
                 </a>
                 <a href="https://eloquent-fermi-387e7f.netlify.app/index.html">
                     <figure>
-                        <img src="img/redesign.png" alt="">
-                        <figcaption>Redesign</figcaption>
+                        <img src="img/REDESIGN_HOVER.png" onmouseover="this.src='img/redesign.png'" onmouseout="this.src='img/redesign_hover.png'">
                     </figure>
                 </a>
             </section>

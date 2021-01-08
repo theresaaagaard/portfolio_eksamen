@@ -58,6 +58,10 @@ nav a {
     text-transform: uppercase;
 }
 
+p:hover {
+    color: #64be6a;
+}
+
 nav a:hover {
     color: #64be6a;
     transition: ease-in .1s;

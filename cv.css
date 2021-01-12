@@ -184,7 +184,7 @@ footer p {
         align-items: center;
     }
 
-    nav ul {
+    nav ul {all: unset;
         list-style: none;
         display: flex;
     }

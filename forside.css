@@ -306,7 +306,6 @@ footer p {
     }
 
     nav ul {
-        all: unset;
         list-style: none;
         display: flex;
     }

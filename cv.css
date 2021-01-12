@@ -6,12 +6,13 @@ body {
 }
 
 img {
-    width: 100%;
+    width: 90%;
+    margin-left: 20px;
 }
 
 #om_mig {
-    padding: 60px;
-    margin-top: 100px;
+    padding: 0;
+    margin-top: 0;
 }
 
 .logo {
@@ -94,10 +95,10 @@ nav a:hover {
 h1 {
     color: #ffe6ad;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-shadow: 3px 3px 4px #1f1f1f;
     margin: 0;
-    padding: 0;
+    padding-top: 180px;
 
 
 }
@@ -114,12 +115,28 @@ h2 {
 
 p {
     color: white;
-    font-size: 1.2vw;
+    font-size: 1rem;
     text-shadow: 2px 2px 4px #1f1f1f;
     text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
     padding: 50px;
+}
+
+a p {
+    font-size: 2rem;
+}
+
+footer {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 300vw;
+    margin-right: 2px;
+    padding: 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #ffe6ad;
 }
 
 @media only screen and (min-width: 700px) {
@@ -133,6 +150,23 @@ p {
         top: 0;
         left: 0;
     }
+
+    #om_mig {
+        padding: 30px;
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    p {
+        color: white;
+        font-size: 1rem;
+        text-shadow: 2px 2px 4px #1f1f1f;
+        text-align: center;
+        padding: 50px;
+        margin-top: 80px;
+    }
+
 
     .burger {
         display: none;
@@ -163,5 +197,19 @@ p {
 
     nav a {
         opacity: 1;
+    }
+
+    footer {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 75vw;
+        margin-right: 2px;
+        padding: 0;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        color: #ffe6ad;
     }
 }

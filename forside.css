@@ -2,10 +2,12 @@
     margin: 0;
 }
 
-body {
 
+body {
+    height: 100%;
+    width: 100%;
+    position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
     text-shadow: 2px 2px 4px #1f1f1f;
 }
 
@@ -13,15 +15,18 @@ img {
     width: 100%;
 }
 
-#forside {
+
+main {
     background-image: url('img/forside_mobil.png');
     background-size: cover;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
 }
+
+
 
 #planet1 {
     position: absolute;
@@ -190,6 +195,7 @@ nav a {
     font-size: 20px;
     text-shadow: 1px 1px 2px rgb(31, 31, 31);
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -232,10 +238,13 @@ h1 {
 }
 
 h2 {
+
     color: #ffe6ad;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-shadow: 3px 3px 4px #1f1f1f;
+
+    color: white;
     margin: 0;
     padding: 0;
 
@@ -243,24 +252,39 @@ h2 {
 
 p {
     color: white;
-    font-size: 22px;
+    font-size: 1rem;
     text-shadow: 2px 2px 4px #1f1f1f;
     text-align: center;
+    padding: 10px;
 
-    padding: 30px;
 }
+
+footer {
+    background-image: url(img/Baggrund.png);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 162vw;
+    margin-right: 2px;
+    padding: 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #ffe6ad;
+}
+
 
 
 /*DESKTOP*/
 
 @media only screen and (min-width: 700px) {
 
-    #forside {
+    main {
         background-image: url('img/Forside.png');
         background-size: cover;
         position: absolute;
         width: 100%;
-        height: 100%;
         top: 0;
         left: 0;
     }
@@ -356,5 +380,20 @@ p {
         background-size: 100%;
         top: 35vw;
         left: 15vw;
+    }
+
+    footer {
+        background-image: url(img/Baggrund.png);
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 51vw;
+        margin-right: 2px;
+        padding: 0;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        color: #ffe6ad;
     }
 }

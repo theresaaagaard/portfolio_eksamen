@@ -174,6 +174,22 @@ section figcaption {
     }
 }
 
+footer {
+    background-image: url(img/Baggrund.png);
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 1400vw;
+    margin-right: 2px;
+    padding: 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+    color: #ffe6ad;
+}
+
+
 @media screen and (max-width: 600px) {
     #animation_container {
         position: absolute;
@@ -320,6 +336,21 @@ section figcaption {
         height: 100%;
         background-image: url('img/animation.png');
         background-size: 100%;
+    }
+
+    footer {
+        background-image: url(img/Baggrund.png);
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 390vw;
+        margin-right: 2px;
+        padding: 0;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+        color: #ffe6ad;
     }
 
 }

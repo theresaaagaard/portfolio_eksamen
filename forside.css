@@ -23,6 +23,129 @@ img {
     left: 0;
 }
 
+#planet1 {
+    position: absolute;
+    height: 11vw;
+    width: 21vw;
+    background-image: url(img/saturn.svg);
+    background-size: 100%;
+    top: 25vw;
+    left: 10vw;
+}
+
+#planet2 {
+    position: absolute;
+    height: 9vw;
+    width: 18vw;
+    background-image: url(img/saturn2.svg);
+    background-size: 100%;
+    top: 35vw;
+    left: 70vw;
+}
+
+#planet3 {
+    position: absolute;
+    height: 11vw;
+    width: 21vw;
+    background-image: url(img/planet.svg);
+    background-size: 100%;
+    top: 110vw;
+    left: 82vw;
+}
+
+#planet4 {
+    position: absolute;
+    height: 11vw;
+    width: 21vw;
+    background-image: url(img/planet.svg);
+    background-size: 100%;
+    top: 145vw;
+    left: 40vw;
+}
+
+#planet5 {
+    position: absolute;
+    height: 11vw;
+    width: 21vw;
+    background-image: url(img/planet.svg);
+    background-size: 100%;
+    top: 85vw;
+    left: 0vw;
+}
+
+.hop {
+    animation-name: hop_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes hop_kf {
+    0% {
+        top: 20vw;
+    }
+
+    100% {
+        top: 15vw;
+    }
+}
+
+.hop2 {
+    animation-name: hop2_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes hop2_kf {
+    0% {
+        top: 35vw;
+    }
+
+    100% {
+        top: 30vw;
+    }
+}
+
+.drej {
+    animation-name: drej_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes drej_kf {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.flyv {
+    animation-name: flyv_kf;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+@keyframes flyv_kf {
+    0% {
+        transform: translateX(-90vw) rotate(-360deg);
+    }
+
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
 
 
 .logo {
@@ -127,6 +250,9 @@ p {
     padding: 30px;
 }
 
+
+/*DESKTOP*/
+
 @media only screen and (min-width: 700px) {
 
     #forside {
@@ -180,5 +306,55 @@ p {
         position: absolute;
         top: 25vw;
         left: 85vw;
+    }
+
+    #planet1 {
+        position: absolute;
+        height: 8vw;
+        width: 13vw;
+        background-image: url(img/saturn.svg);
+        background-size: 100%;
+        top: 17vw;
+        left: 10vw;
+    }
+
+    #planet2 {
+        position: absolute;
+        height: 8vw;
+        width: 13vw;
+        background-image: url(img/saturn2.svg);
+        background-size: 100%;
+        top: 25vw;
+        left: 70vw;
+    }
+
+    #planet3 {
+        position: absolute;
+        height: 5vw;
+        width: 8vw;
+        background-image: url(img/planet.svg);
+        background-size: 100%;
+        top: 45vw;
+        left: 88vw;
+    }
+
+    #planet4 {
+        position: absolute;
+        height: 5vw;
+        width: 8vw;
+        background-image: url(img/planet.svg);
+        background-size: 100%;
+        top: 10vw;
+        left: 80vw;
+    }
+
+    #planet5 {
+        position: absolute;
+        height: 5vw;
+        width: 8vw;
+        background-image: url(img/planet.svg);
+        background-size: 100%;
+        top: 35vw;
+        left: 15vw;
     }
 }
